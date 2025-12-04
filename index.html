@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Joseph Smith Era — Slide Timeline (1820–1844)</title>
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Joseph Smith Era — 3-slide Timeline (1820–1844)</h1>
+    <p>Three clean slides. A very faint Eastern U.S. map watermark sits behind the timelines. ★ markers indicate relevant church centers (hover/click for names).</p>
+  </div>
+  <div class="actions">
+    <div class="nav">
+      <button class="btn" id="btnPrev" title="Previous slide">← Prev</button>
+      <div class="dots" id="dots"></div>
+      <button class="btn" id="btnNext" title="Next slide">Next →</button>
+    </div>
+    <button class="btn" id="btnSvg">Download current SVG</button>
+    <button class="btn" id="btnAll">Download all 3 SVGs</button>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="card">
+    <svg id="viz" viewBox="0 0 1920 1080" role="img" aria-label="Slide-based parallel timelines"
+         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"></svg>
+  </div>
+</div>
+
+<div id="tooltip" role="dialog" aria-modal="false" tabindex="-1">
+  <div class="row">
+    <div>
+      <h3 id="ttTitle"></h3>
+      <div class="meta" id="ttMeta"></div>
+    </div>
+    <button class="close" id="ttClose" aria-label="Close">✕</button>
+  </div>
+  <div class="note" id="ttNote"></div>
+</div>
+
+<script type="module" src="./assets/app.js"></script>
+</body>
+</html>
